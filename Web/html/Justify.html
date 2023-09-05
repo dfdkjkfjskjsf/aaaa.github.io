@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon"> 
+    <title>Flex Wrap.io</title>
+
+    <style>
+
+        body {
+            box-sizing: border-box;
+            background-color: rgb(225, 190, 159);
+            font-family: verdana;
+            margin:0px;
+            padding:0px;
+        }
+        .container > .header {
+            text-align: center;
+            margin:0px;
+            padding:0px 0px;
+        }
+
+        .container > .header h1 {
+            margin:0px;
+            padding:30px 0px;
+            font-size: 40px;
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(247, 159, 44);
+            margin:20px 0px;
+            padding:0px;
+        }
+
+        .body > .b {
+            margin:10px;
+            padding:25px;
+            background-color: aliceblue;
+        }
+        .two{
+            justify-content: flex-start;
+        }
+
+        .body > .bb {
+            margin:10px;
+            padding:25px;
+            background-color: aliceblue;
+        }
+        .three {
+            justify-content: flex-end;
+        }
+
+        .body > .bbb {
+            margin:10px;
+            padding:25px;
+            background-color: aliceblue;
+        }
+        .four {
+            justify-content: space-around;
+        }
+
+        .body > .bbbb {
+            margin:10px;
+            padding:25px;
+            background-color: aliceblue;
+        }
+
+        .fifth{
+            justify-content: space-between;
+        }
+        .body > .bbbbb {
+            margin:10px;
+            padding:25px;
+            background-color: aliceblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>
+                Flex Element
+            </h1>
+        </div>
+
+        <h3>Center</h3>
+        <div class="body one">
+            <div class="b">1</div>
+            <div class="b">2</div>
+            <div class="b">3</div> 
+        </div>
+
+        <h3>flex-start</h3>
+        <div class="body two">
+            <div class="bb">1</div>
+            <div class="bb">2</div>
+            <div class="bb">3</div> 
+        </div>
+
+        <h3>flex-end</h3>
+        <div class="body three">
+            <div class="bbb">1</div>
+            <div class="bbb">2</div>
+            <div class="bbb">3</div> 
+        </div>
+
+        <h3>space-around</h3>
+        <div class="body four">
+            <div class="bbbb">1</div>
+            <div class="bbbb">2</div>
+            <div class="bbbb">3</div> 
+        </div>
+
+        <h3>space-between</h3>
+        <div class="body fifth">
+            <div class="bbbbb">1</div>
+            <div class="bbbbb">2</div>
+            <div class="bbbbb">3</div> 
+        </div>
+        
+    </div>
+</body>
+</html>

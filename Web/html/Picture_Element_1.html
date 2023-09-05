@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/Me_as_favicon.ico" type="image/x-icon">
+    <title>Picture Element.io</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: verdana;
+            background-color: rgb(158, 158, 133);
+            padding:0px;
+            margin:0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Picture Element
+    </h1>
+
+
+    <p>
+        If width of your background greate then 800px 
+    </p>
+    <img src="/img/Girly.jpg" style="width:200px;">  
+
+
+
+    <p>
+        If width of your background less then 800px and greate then 600px
+    </p>
+    <img src="/img/Girl.jpg" alt="" style="width:200px;">  
+
+
+
+    <p>
+        If width of your background less then 600px
+    </p>
+    <img src="/img/Me.jpg" style="width:200px;">
+
+
+    <!-- Picture Element is use to perfrom how background change with media size -->
+
+    <picture>
+        <source media="(min-width:800px)" srcset="/img/Girly.jpg">
+        <source media="(min-width:600px)" srcset="/img/Girl.jpg">
+        <img src="/img/Me.jpg">
+    </picture>
+
+
+
+</body>
+</html>
